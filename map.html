@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte des Établissements Scolaires</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="container">
+
+        <nav>
+            <a href="index.html">Retour au tableau</a>
+        </nav>
+                <!--ici je fais moi meme les filters ;; non pas comme dans le index  -->
+                <div class="filters">
+            <div class="filtre">
+                <label for="region-filter">Région</label>
+                <select id="region-filter">
+                    <option value="">Toutes les régions</option>
+                </select>
+            </div>
+
+            <div class="filtre">
+                <label for="departement-filter">Département</label>
+                <select id="departement-filter">
+                    <option value="">Tous les départements</option>
+                </select>                                               
+            </div>
+
+            <div class="filtre">
+                <label for="type-filter">Type</label>
+                <select id="type-filter">
+                    <option value="">Tous les types</option>
+                </select>
+            </div>
+
+            <div class="filtre">
+                <label for="ville-filter">Ville</label>
+                <select id="ville-filter">
+                    <option value="">Toutes les villes</option>
+                </select>
+            </div>
+
+            <div class="filtre">
+                <label>`</label> <!-- pour aligner le boutton reset avec les autres filtres qui ont un label -->
+                <button id="reset-filters">Réinitialiser les filtres</button>
+            </div>
+        </div>
+
+        <div id="map"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+    <script src="Data/Position.js"></script>
+    <script src="map.js"></script>
+</body>
+</html>
