@@ -1,4 +1,6 @@
 # School_Mapping_France
+**https://zarhouti-haitam.github.io/School_Mapping_France/index.html**
+
 Hey Everyone , I am happy to share with you one of my projects :) =>
 It's a lightweight web application that visualizes educational institutions in France using an interactive table and map. It allows users to:
 
